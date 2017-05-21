@@ -3,7 +3,7 @@
 # pylint: disable=R0904
 
 
-from __future__ import absolute_import, unicode_literals
+
 from builtins import str
 import itertools
 from collections import namedtuple
@@ -46,7 +46,7 @@ class TestLoadEtext(MockTextMixin, unittest.TestCase):
         for testcase, loader in itertools.product(testcases, loaders):
             etext = loader(testcase.etextno)
             self.assertIsInstance(etext, str)
-            self.assertNotIn(u'\ufffd', etext)
+            self.assertNotIn('\ufffd', etext)
 
     def test_invalid_etext(self):
         with self.assertRaises(UnknownDownloadUriException):

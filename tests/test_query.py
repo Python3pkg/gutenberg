@@ -2,7 +2,7 @@
 # pylint: disable=R0904
 
 
-from __future__ import absolute_import, unicode_literals
+
 
 from tests._sample_metadata import SampleMetaData
 from tests._util import MockMetadataMixin

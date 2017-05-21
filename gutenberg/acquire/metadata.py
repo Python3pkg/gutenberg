@@ -1,7 +1,7 @@
 """Module to deal with metadata acquisition."""
 # pylint:disable=W0603
 
-from __future__ import absolute_import, unicode_literals
+
 
 import abc
 import logging

@@ -1,6 +1,6 @@
 """Module to deal with type validation."""
 
-from __future__ import unicode_literals
+
 import sys
 
 from rdflib.term import bind
@@ -25,5 +25,5 @@ def rdf_bind_to_string(rdf_type):
     term to the appropriate string type.
 
     """
-    string_type = unicode if sys.version_info < (3,) else str  # noqa
+    string_type = str if sys.version_info < (3,) else str  # noqa
     bind(rdf_type, string_type)

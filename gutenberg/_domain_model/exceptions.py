@@ -1,6 +1,6 @@
 """Module to hold Gutenberg exceptions."""
 
-from __future__ import unicode_literals
+
 
 
 class Error(Exception):
